@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="033533f023554aa8b153e40ba373eec4" Name="Diagram1">
+        <EntityTypeShape EntityType="CasinoModel.Bets" Width="1.5" PointX="7.5" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CasinoModel.Game" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CasinoModel.GameSessions" Width="1.5" PointX="5.25" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CasinoModel.Report" Width="1.5" PointX="5.25" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CasinoModel.Role" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CasinoModel.Transactions" Width="1.5" PointX="5.25" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CasinoModel.User" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <AssociationConnector Association="CasinoModel.FK_Bets_GameSessions" ManuallyRouted="false" />
+        <AssociationConnector Association="CasinoModel.FK_GameSessions_Game" ManuallyRouted="false" />
+        <AssociationConnector Association="CasinoModel.FK_GameSessions_User" ManuallyRouted="false" />
+        <AssociationConnector Association="CasinoModel.FK_Report_User" ManuallyRouted="false" />
+        <AssociationConnector Association="CasinoModel.FK_User_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="CasinoModel.FK_Transactions_User" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="CasinoModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="5.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
